@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct CardView: View {
+    @Binding var text: String
+    @Binding var description: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10) {
+            Text("\(text)")
+                .font(.headline)
+                .foregroundColor(.white)
+            Text("\(description)")
+                .font(.subheadline)
+                .foregroundColor(.white)
+        }
+        .padding()
+        .background(Color.black)
+        .cornerRadius(15)
+        .shadow(radius: 5) // Adds shadow effect
+        .padding(.horizontal)
     }
 }
-
 #Preview {
-    CardView()
+    @Previewable @State var sampleText = "Sample Title"
+    @Previewable @State var sampleDescription = "This is a description."
+
+    CardView(text: $sampleText, description: $sampleDescription)
 }
