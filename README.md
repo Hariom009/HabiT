@@ -1,13 +1,23 @@
-HabiT – Habit Tracker App
+HabiT – Build Better Habits, Stay Consistent
 
-A minimal and effective iOS app to build and maintain positive habits with progress tracking and reminders.
+HabiT is a simple yet powerful iOS app designed to help you build, track, and maintain positive habits with ease. Stay motivated with streaks, reminders, and insightful progress tracking.
 
-Features:
-Add, track, and manage daily habits
-Visual progress tracking with streaks
-Simple and intuitive UI for easy habit management
+🌟 Features
 
-Technologies Used:
-Swift & SwiftUI
-UserDefaults for habit storage
-Notifications for habit reminders
+✅ Add & Track Habits – Set daily habits and monitor progress
+✅ Smart Reminders – Get timely notifications to stay on track
+✅ Progress Streaks – Stay motivated with visual streak tracking
+✅ Minimal & Intuitive UI – A clean, distraction-free experience
+
+🛠️ Technologies Used
+
+Swift & SwiftUI – Smooth and modern UI experience
+UserDefaults – Secure and persistent habit storage
+Local Notifications – Smart reminders to build consistency
+
+
+🚀 Installation
+
+Clone the repository
+Open the project in Xcode.
+Build and run on a simulator or device.
