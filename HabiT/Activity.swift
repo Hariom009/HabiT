@@ -14,6 +14,7 @@ struct Activity: Identifiable,Codable,Equatable {
     let date: Date
     var duration: Int
     var lastUpdated: Date = .distantPast
+    var isCompletedToday: Bool = false
     var colorName: String = Activity.randomColorName()
     static func randomColorName() -> String {
            let colorOptions = ["red", "blue", "green", "purple", "orange", "pink", "indigo", "teal"]
@@ -35,8 +36,6 @@ struct Activity: Identifiable,Codable,Equatable {
        }
     
 }
-
-
 class ActivityManager: ObservableObject {
 
     @Published var activities: [Activity] = []
@@ -54,7 +53,7 @@ class ActivityManager: ObservableObject {
                let decoded = try? JSONDecoder().decode([Activity].self, from: savedData) {
                 activities = decoded
             }
-        }
+    }
     func addActivity(_ activity: Activity) {
            activities.append(activity)
            saveActivities() // Ensure new activities are saved

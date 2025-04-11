@@ -45,6 +45,10 @@ struct EditNewHabit: View {
                      */
                 }
                 .scrollContentBackground(.hidden)
+                
+                
+                
+                
                 VStack(spacing: 12){
                   
                       //  .padding(.top,150)
